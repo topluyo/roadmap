@@ -1,0 +1,218 @@
+<script src="//apps.asenax.com/documenter/documenter.js?disable-html=true"></script>
+<meta charset="utf8">
+<title>Roadmap</title>
+
+<script>
+  documenter.icons["success"]   = `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#75FB4C"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.29 16.29 5.7 12.7c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L10 14.17l6.88-6.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-7.59 7.59c-.38.39-1.02.39-1.41 0z"/></svg>`
+  documenter.icons["waiting"]   = `<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#B7B7B7"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M11.99,2C6.47,2,2,6.48,2,12s4.47,10,9.99,10C17.52,22,22,17.52,22,12S17.52,2,11.99,2z M16,16 c-0.39,0.39-1.02,0.39-1.41,0l-3.29-3.29C11.11,12.52,11,12.27,11,12V8c0-0.55,0.45-1,1-1h0c0.55,0,1,0.45,1,1v3.59l3,3 C16.39,14.98,16.39,15.61,16,16z"/></g></svg>`
+  documenter.icons["error"]     = `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#EA3323"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>`
+  documenter.icons["update"]    = `<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#75FBFD"><g><rect fill="none" height="24" width="24"/><rect fill="none" height="24" width="24"/></g><g><g><path d="M12,2C6.48,2,2,6.48,2,12c0,5.52,4.48,10,10,10s10-4.48,10-10 C22,6.48,17.52,2,12,2z M16.54,15.85l-0.69,0.69c-0.39,0.39-1.02,0.39-1.41,0l-3.05-3.05c-1.22,0.43-2.64,0.17-3.62-0.81 c-1.11-1.11-1.3-2.79-0.59-4.1l2.35,2.35l1.41-1.41L8.58,7.17c1.32-0.71,2.99-0.52,4.1,0.59c0.98,0.98,1.24,2.4,0.81,3.62 l3.05,3.05C16.93,14.82,16.93,15.46,16.54,15.85z" fill-rule="evenodd"/></g></g></svg>`
+  documenter.icons["copyright"] = `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#EA33F7"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 1H5c-1.1 0-1.99.9-1.99 2L3 15.93c0 .69.35 1.3.88 1.66l7.57 5.04c.34.22.77.22 1.11 0l7.56-5.04c.53-.36.88-.97.88-1.66V3c0-1.1-.9-2-2-2zm-.7 6.7l-7.59 7.59c-.39.39-1.02.39-1.41 0L5.71 11.7c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0L10 13.17l6.88-6.88c.39-.39 1.02-.39 1.41 0s.4 1.02.01 1.41z"/></svg>`
+  documenter.icons["heart"]     = `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#EA3323"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13.35 20.13c-.76.69-1.93.69-2.69-.01l-.11-.1C5.3 15.27 1.87 12.16 2 8.28c.06-1.7.93-3.33 2.34-4.29 2.64-1.8 5.9-.96 7.66 1.1 1.76-2.06 5.02-2.91 7.66-1.1 1.41.96 2.28 2.59 2.34 4.29.14 3.88-3.3 6.99-8.55 11.76l-.1.09z"/></svg>`
+
+  documenter.when("[documenter-icon]",function(el){
+    if(documenter.icons[el.getAttribute("documenter-icon")]!=null){
+      el.innerHTML = documenter.icons[el.getAttribute("documenter-icon")].split("<svg").join('<svg style="width:1.5em;height:1.5em" ');
+    }else{
+      el.innerHTML = el.attr("documenter-icon")
+    }
+  })
+</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+  body {
+    font-family: 'Outfit', sans-serif;
+  }
+  *{
+    box-sizing:border-box;
+  }
+  body{
+    padding:0;
+    x-display:flex;
+    x-align-items:center;
+    x-justify-content:center;
+  }
+  [roadmap]{
+    padding:1em;
+    width:100%;
+  }
+  [roadmap-item]:nth-child(4n+1) { --primary: #34D399; }
+  [roadmap-item]:nth-child(4n+2) { --primary: #60A5FA; }
+  [roadmap-item]:nth-child(4n+3) { --primary: #F97316; }
+  [roadmap-item]:nth-child(4n+4) { --primary: #EC4899; }
+
+  [roadmap-item]{
+    position:relative;
+    top:-2px;
+    border-left:2px solid var(--primary);
+    border-top:2px solid #FFF1;
+    padding-left:1em;
+    padding-right:1em;
+    padding-bottom:1.5em;
+    width:32vw;
+    min-width:32vw;
+  }
+  [roadmap-item]:before{
+    position:absolute;
+    left:-1px;
+    top:-1px;
+    transform:translate(-50%,-50%);
+    content:"";
+    width:20px;
+    height:20px;
+    background:var(--primary);
+    border-radius:100%;
+  }
+  [roadmap-item] h2{
+    color:var(--primary);
+  }
+
+  [roadmap-item]>div{
+    position:relative;
+  }
+  [roadmap-item] [documenter-icon]{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  date{
+    font-size:.8em;
+    opacity:.8;
+    display:inline-block;
+  }
+  info{
+    display:block;
+    font-weight:600;
+  }
+  [roadmap-item] > div:not([documenter-icon]){
+    padding-left:2rem;
+  }
+  mute{
+    display:inline-block;
+    opacity:.8;
+    font-size:.8em;
+  }
+
+  /*
+  date,mute{
+    display:none;
+  }
+  div[type=error]{
+    display:none;
+  }
+  */
+
+</style>
+<body class="theme-dark">
+  <div roadmap flex-x style="flex-wrap:wrap;">
+    <div roadmap-item flex-y gap>
+      <h2>2024 Ekim</h2>
+      <div type="success"><div documenter-icon="success"></div> <date>18 Ekim  2024</date> <info>Topluyo için çalışmalar başladı</info></div>
+      <div type="success"><div documenter-icon="success"></div> <date>29 Ekim  2024</date> <info>Domain Alındı</info></div>
+    </div>
+
+
+    <div roadmap-item flex-y gap>
+      <h2>2024 Kasım</h2>
+      <div type="success"><div documenter-icon="success"></div> <date>03 Kasım 2024</date> <info>Web Sitesi kuruldu </info></div>
+      <div type="success"><div documenter-icon="success"></div> <date>03 Kasım 2024</date> <info>Video-Ses Transfer özelliği kullanıma sunuldu</info></div>
+      <div type="success"><div documenter-icon="success"></div> <date>12 Kasım 2024</date> <info>Sosyal Medya Hesapları Kuruldu </info></div>
+      <div type="success"><div documenter-icon="success"></div> <date>14 Kasım 2024</date> <info>Rol ekleme silme,Youtube,Kick ve Twitch entegrasyonu </info></div>
+    </div>
+
+    <div roadmap-item flex-y gap>
+      <h2>2024 Aralık</h2>
+      <div type="success"><div documenter-icon="success"></div> <date>01 Aralık 2024</date> <info>Hareketli gif ekleme, UI güncellemeleri</info></div>
+      <div type="copyright"><div documenter-icon="copyright"></div> <date>04 Aralık 2024</date> <info>Topluyo Marka Tescili Başvurusu</info></div>
+      <div type="success"><div documenter-icon="success"></div> <date>03 Aralık 2024</date> <info>Sesli bot özelliği sunuldu</info></div>
+      <div type="success"><div documenter-icon="success"></div> <date>10 Aralık 2024</date> <info>Yayıncılar, uygulamayı kullanmaya başladı</info></div>
+      <div type="heart"><div documenter-icon="heart"></div>   <date>12 Aralık 2024</date> <info>Topluyo' ya İlk Gönüllüler Katıldı </info><mute>İsmail,Eren,Ömer,Yusuf artık Topluyoda. Yazılım geliştiren gönüllülerimiz ile çok daha güçlüyüz.</mute></div>
+    </div>
+
+
+    <div roadmap-item flex-y gap>
+      <h2>2025 Ocak</h2>
+      <div type="success"><div documenter-icon="success"></div> <date>11 Ocak 2025</date> <info>Windows uygulaması ilk versiyonu kullanıma sunuldu</info></div>
+      <div type="error"><div documenter-icon="error"></div> <date>25 Ocak 2025</date> <info>İlk DDOS saldırısı <mute>Topluyo sunucusuna ve Hosting firmasının sunucusuna saldırıldı. Sunucu firmasının sitesi cevap veremedi.</mute></info></div>
+      <div type="error"><div documenter-icon="error"></div> <date>29 Ocak 2025</date> <info>Organize DDOS saldırısı, 4 Milyar istek </info><mute>İstanbul menşeli bir siber güvenlik firmasının sahibi olduğunu iddia eden kişi DDOS saldırılarına karşı yardım sever bir şekilde koruma talep etti. Kendisini topluyo.com'a davet edip bilgi aldık. Ancak bu kişinin topluyoya giriş yaptığı IP adresi ile DDOS saldırıları başlamadan 18 saniye öncesinde istek atan IP adresi aynı olması sebebiyle, Topluyo'ya DDOS saldırı yaptığını yapan gurubun bizzat bir Siber Güvenlik Firması olduğunu düşünüyoruz. Daha sonrasında Siber Güvenlik Firmasının ifşa yayının gerçekleştirdik.</mute></div>
+    </div>
+
+    <div roadmap-item flex-y gap>
+      <h2>2025 Şubat</h2>
+      <div type="heart"><div documenter-icon="heart"></div>   <date>01 Şubat 2024</date> <info>Azerbeycandan İlk Gönüllü Topluyo'ya Katıldı </info><mute>Serkan ekibi dahil oldu.</mute></div>
+      <div type="success"><div documenter-icon="success"></div> <date>06 Şubat 2025</date> <info>Arayüz güncellemesi</info><mute>Rollere göre sıralama özelliği eklendi. Topluyo anasayfasının keşfet algoritmasına güncellendi.</mute></div>
+      <div type="success"><div documenter-icon="success"></div> <date>10 Şubat 2025</date> <info>Android Uygulaması kullanıma sunuldu </info></div>
+      <div type="error"><div documenter-icon="error"></div> <date>12 Şubat 2025</date> <info>Sosyal Medya Bot saldırısı </info><mute>Instagram,Tiktok,Youtube arama algoritmalarını bozmak için hindistandan kullanıcı botu basarak, Türkiyedeki kullanıcılara erişimin engellenmesi.</mute></div>
+    </div>
+
+    <div roadmap-item flex-y gap>
+      <h2>2025 Mart</h2>
+      <div type="error"><div documenter-icon="error"></div> <date>01 Mart 2025</date> <info>Topluyo Kullanan Yayıncılara Saldırı</info><mute>Canlı yayında çok hızlı bir şekilde topluyo kullanmaya başlayan, @akanzii isimli yayıncı ile hoşgeldin görüşmesi yapıldı, bir saat sonrasında kendini topluyo ekibinden tanıtan kişiler, ekibindeki arkadaşların eposta adresleri çaldı, canlı yayında yayıncıya ve arkadaşlarına hakaret etti.</mute></div>
+      <div type="error"><div documenter-icon="error"></div> <date>04 Mart 2025</date> <info>Sunucu Kaynaklı Büyük Kesinti</info><mute>5 saat hizmet verilemedi</mute></div>
+      <div type="update"><div documenter-icon="update"></div> <date>08 Mart 2025</date> <info>Sunucu Taşıma İşlemi Tamamlandı</info><mute>3 Gün süren taşıma sonucu yeni sunucuya geçildi.</mute></div>
+      <div type="success"><div documenter-icon="success"></div> <date>20 Mart 2025</date> <info>Video Transfer Uygulaması Güncellendi</info><mute>Mikrofon, kamera seçimi, sesli bağlantı içerisinde sohbet edebilme güncellemesi.</mute></div>
+    </div>
+
+
+    <div roadmap-item flex-y gap>
+      <h2>2025 Nisan</h2>
+      <div type="success"><div documenter-icon="success"></div> <date>05 Nisan 2025</date> <info>Takım oluşturma özelliği geldi</info><mute>Takım oluşturma, takıma katılma, takım içi sesli sohbet.</mute></div>
+      <div type="copyright"><div documenter-icon="copyright"></div> <date>29 Nisan 2025</date> <info>Topluyo.com Marka Tescili Başvurusu</info></div>
+    </div>
+
+
+    <div roadmap-item flex-y gap>
+      <h2>2025 Mayıs</h2>
+      <div type="success"><div documenter-icon="success"></div> <date>07 Mayıs 2025</date><info>Yeni Arayüz Güncellemesi</info><mute></mute></div>
+      <div type="success"><div documenter-icon="success"></div> <date>10 Mayıs 2025</date><info>Bireysel Arama Güncellemesi</info><mute>Kişilerin birbirini canlı olarak arayıp, sesli ve görüntülü konuşma güncellemesi.</mute></div>
+      <div type="error"><div documenter-icon="error"></div> <date>22 Mayıs 2025</date><info>Sunucu Firmasının, Domain Durdurma İhtarı</info><mute>Topluyo'ya yapılan DDOS saldırıları sonrası, Hosting Firması, domainin askıya almakla ilgili ihtar çekti. "Aksi takdirde, alan adı askıya alınacaktır." mailini hosting firması gönderdi.</mute></div>
+      <div type="update"><div documenter-icon="update"></div> <date>23 Mayıs 2025</date><info>Sunucu Taşıma</info><mute>Önceki hosting firmasını alan adını askıya almakla ilgili ihtar-tehtidi sonrası hosting-domain transferlerine başladık. Yaklaşık 10 gün sonrasında transfer işlemleri tamamlandı.</mute></div>
+    </div>
+
+
+    <div roadmap-item flex-y gap>
+      <h2>2025 Haziran</h2>
+      <div type="success"><div documenter-icon="success"></div> <date>02 Haziran 2025</date><info>Arkadaşlık özelliği getirildi</info><mute>Kullanıcılar birbiri ile arkadaşlık kurabilir, mesajlaşabilir</mute></div>
+      <div type="success"><div documenter-icon="success"></div> <date>14 Haziran 2025</date><info>DM özelliği getirildi</info><mute>Doğrudan Mesaj özelliği getirildi.</mute></div>
+      <div type="heart"><div documenter-icon="heart"></div> <date>14 Haziran 2025</date><info>Instagramda 1000 takipçiye ulaştık</info><mute></mute></div>
+      <div type="error"><div documenter-icon="error"></div>   <date>15 Haziran 2025</date><info>DDOS Saldırı</info><mute>CloudFlare FireWall ile kısa sürede saldırı savuşturuldu.</mute></div>
+      <div type="copyright"><div documenter-icon="copyright"></div> <date>20 Haziran 2025</date> <info>Topluyo.com Marka Tescili Yayın Kararı</info></div>
+      <div type="success"><div documenter-icon="success"></div> <date>23 Haziran 2025</date><info>Turbo özelliği getirildi</info><mute>Site içi alışverişte kullanılabilen Turbo özelliği geldi.</mute></div>
+      <div type="success"><div documenter-icon="success"></div> <date>24 Haziran 2025</date><info>Market Sistemi Güncellendi</info><mute>Market arayüzü güncellendi.</mute></div>
+      <div type="success"><div documenter-icon="success"></div> <date>30 Haziran 2025</date><info>TOPLY Hizmet Tokeni Çıkartıldı</info><mute>Turbo özelliğimizi polygonda TOPLY hizmet tokenı olarak çıkardık. Aynı akşam Uniswap'ta işlem görmeye başladı.</mute></div>
+    </div>
+
+
+    <div roadmap-item flex-y gap>
+      <h2>2025 Temmuz</h2>
+      <div type="success"><div documenter-icon="success"></div> <date>11 Temmuz 2025</date><info>Bot güncellemesi geldi</info><mute>Topluyo içerisinde artık kendi botlarınız tasarlayabilir, diğer kullanıcıların kullanımına sunabilirsiniz.</mute></div>
+      <div type="success"><div documenter-icon="success"></div> <date>19 Temmuz 2025</date><info>Monatizasyon özelliği kullanıma sunuldu</info><mute> Sunucu sahipleri için monetizasyon özelliği geldi, artık sunucularında reklamı açarak turbo kazanabilirsiniz.</mute></div>
+      <div type="success"><div documenter-icon="success"></div> <date>20 Temmuz 2025</date><info>Beraber İzleme uygulaması</info><mute>Beraber izle uygulaması ile kullanıcılar youtube üzerinden videoları eşzamanlı izleyebilirler.</mute></div>
+    </div>
+
+
+    <div roadmap-item flex-y gap>
+      <h2>2025 Ağustos</h2>
+      <div type="success"><div documenter-icon="success"></div> <date>07 Ağustos 2025</date><info>TFF Oyunu kullanıma sunuldu</info><mute>Topluyo içinde oynanabilir, TFF oyunu kullanıma sunuldu.</mute></div>
+      <div type="copyright"><div documenter-icon="copyright"></div> <date>11 Ağustos 2025</date> <info>Topluyo Marka Tescili Yayın Kararı</info></div>
+      <div type="success"><div documenter-icon="success"></div> <date>11 Ağustos 2025</date><info>Topluyo Uygulaması Microsoft Store'da yayınlandı</info><mute>Daha öncesinde sertifika sorunu olduğu için, kullanıcıların indirmede sorun yaşamalarından dolayı, gönüllülerimizden İsmail uygulamayı Microsoft Store'a çıkarttı.</mute></div>
+      <div type="error"><div documenter-icon="error"></div>   <date>15 Ağustos 2025</date><info>DDOS Saldırı</info><mute>CloudFlare FireWall ile yurt dışına erişim kapandı, ancak yurt dışından gelen kullanıcılar ve mobil kullanıcılar için büyük bir problem oluşturdu.</mute></div>
+    </div>
+
+
+    <div roadmap-item flex-y gap>
+      <h2>2025 Eylül - Aralık</h2>
+      <div type="waiting"><div documenter-icon="waiting"></div> <date></date><info>Merkezi yerel bir exchange üzerinde TOPLY hizmet tokenımızın listelenmesi </info><mute></mute></div>
+      <div type="waiting"><div documenter-icon="waiting"></div> <date></date><info>Video Transfer Uygulaması Güncellemesi</info><mute></mute></div>
+      <div type="waiting"><div documenter-icon="waiting"></div> <date></date><info>Markete Uygulama Güncellemesi</info><mute></mute></div>
+      <div type="waiting"><div documenter-icon="waiting"></div> <date></date><info>TOPLY &lt;=&gt; TURBO deposit/withdraw güncelemesi</info><mute></mute></div>
+      <div type="waiting"><div documenter-icon="waiting"></div> <date></date><info>Topluyo Bootcamp</info><mute></mute></div>
+      <div type="waiting"><div documenter-icon="waiting"></div> <date></date><info>IOS Uygulaması</info><mute></mute></div>
+    </div>
+
+  
+
+
+  </div>
+
+</body>

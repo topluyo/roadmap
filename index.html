@@ -27,13 +27,12 @@
     box-sizing:border-box;
   }
   body{
-    padding:0;
+    padding:1em;
     x-display:flex;
     x-align-items:center;
     x-justify-content:center;
   }
   [roadmap]{
-    padding:1em;
     width:100%;
   }
   [roadmap-item]:nth-child(4n+1) { --primary: #34D399; }
@@ -49,9 +48,28 @@
     padding-left:1em;
     padding-right:1em;
     padding-bottom:1.5em;
-    width:32vw;
-    min-width:32vw;
+    width:360px;
   }
+
+  
+  
+  @media (max-width: 599px) {
+    [roadmap-item]{
+      width:100%;
+    }
+  }
+  @media (min-width: 600px) and (max-width: 899px) {
+    [roadmap-item]{
+      width:50%;
+    }
+  }
+  @media (min-width: 900px) {
+    [roadmap-item]{
+      width:33.33%;
+    }
+  }
+
+
   [roadmap-item]:before{
     position:absolute;
     left:-1px;
@@ -210,9 +228,5 @@
       <div type="waiting"><div documenter-icon="waiting"></div> <date></date><info>IOS Uygulaması</info><mute></mute></div>
     </div>
 
-  
-
-
   </div>
-
 </body>
